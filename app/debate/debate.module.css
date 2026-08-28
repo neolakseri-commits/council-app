@@ -1,0 +1,289 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #ff4444;
+  padding-bottom: 24px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #ff4444;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.backButton:hover {
+  color: #ff6666;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff4444;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.questionPhase {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionBox {
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #ff4444;
+  padding: 48px;
+  background: rgba(255, 68, 68, 0.05);
+  border-radius: 4px;
+}
+
+.questionBox h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 12px;
+}
+
+.questionBox p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 32px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #333;
+  background: rgba(10, 14, 39, 0.8);
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 24px;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ff4444;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.1);
+}
+
+.textarea::placeholder {
+  color: #555;
+}
+
+.debateButton {
+  width: 100%;
+  padding: 16px;
+  background: #ff4444;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.debateButton:hover:not(:disabled) {
+  background: #ff6666;
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+}
+
+.debateButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.debatePhase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  flex: 1;
+}
+
+.debateCanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  padding: 24px;
+  background: rgba(10, 14, 39, 0.8);
+  border-radius: 4px;
+}
+
+.canvas {
+  width: 100%;
+  height: auto;
+}
+
+.debateArguments {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.argument {
+  border: 1px solid #333;
+  padding: 20px;
+  background: rgba(10, 14, 39, 0.8);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.argument.active {
+  border-color: #ff4444;
+  background: rgba(255, 68, 68, 0.05);
+}
+
+.archType {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.argument p {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.confidence {
+  font-size: 12px;
+  color: #ff4444;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.verdictPhase {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verdictBox {
+  max-width: 700px;
+  width: 100%;
+  border: 2px solid #ff4444;
+  padding: 48px;
+  background: rgba(255, 68, 68, 0.05);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.recommendation {
+  font-size: 48px;
+  font-weight: 900;
+  color: #ff4444;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.confidenceBar {
+  height: 8px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.confidenceFill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4444, #ff8888);
+  transition: width 0.3s ease;
+}
+
+.confidenceLabel {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+
+.reasoning {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.shareButton,
+.newButton {
+  padding: 16px 24px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.shareButton {
+  background: #ff4444;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.shareButton:hover {
+  background: #ff6666;
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+}
+
+.newButton {
+  background: transparent;
+  border: 1px solid #ff4444;
+  color: #ff4444;
+  letter-spacing: 0.5px;
+}
+
+.newButton:hover {
+  background: rgba(255, 68, 68, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .debatePhase {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendation {
+    font-size: 32px;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+}
+
