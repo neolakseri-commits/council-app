@@ -1,0 +1,347 @@
+.header {
+  border-bottom: 1px solid #ff4444;
+  padding: 32px 0;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4444;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.logoSubtitle {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.headerStatus {
+  text-align: right;
+  font-size: 14px;
+}
+
+.connected {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.hero {
+  padding: 60px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 320px 1fr 280px;
+  gap: 32px;
+  align-items: center;
+}
+
+.heroLeft,
+.heroRight {
+  border: 1px solid #333;
+  padding: 24px;
+  background: rgba(10, 14, 39, 0.8);
+  border-radius: 4px;
+}
+
+.howWorks h2 {
+  font-size: 13px;
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.howWorks ol {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #aaa;
+  list-style-position: inside;
+  margin-bottom: 24px;
+}
+
+.howWorks li {
+  margin-bottom: 12px;
+}
+
+.features {
+  padding-top: 24px;
+  border-top: 1px solid #333;
+  font-size: 12px;
+  color: #666;
+}
+
+.features div {
+  margin-bottom: 8px;
+}
+
+.heroCenter {
+  text-align: center;
+  border: 1px solid #ff4444;
+  padding: 48px;
+  background: rgba(255, 68, 68, 0.05);
+  border-radius: 4px;
+}
+
+.centerTitle {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff4444;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.centerDescription {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  padding: 16px 48px;
+  background: #ff4444;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.ctaButton:hover {
+  background: #ff6666;
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+}
+
+.demoLink {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #666;
+}
+
+.demoLink a {
+  color: #ff4444;
+}
+
+.pricing h2 {
+  font-size: 13px;
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.pricing h3 {
+  font-size: 13px;
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+
+.pricingItem {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+.pricingItem div {
+  margin-bottom: 8px;
+}
+
+.pricingDivider {
+  height: 1px;
+  background: #333;
+  margin: 24px 0;
+}
+
+.agentsSection {
+  padding: 80px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.agentsSection h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 48px;
+  letter-spacing: 1px;
+}
+
+.agentGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.agentCard {
+  border: 1px solid #ff4444;
+  padding: 24px;
+  background: rgba(255, 68, 68, 0.05);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.agentCard:hover {
+  border-color: #ff6666;
+  background: rgba(255, 68, 68, 0.1);
+  transform: translateY(-4px);
+}
+
+.agentNumber {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 12px;
+}
+
+.agentCard h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.agentCard p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.agentNote {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.debateSection {
+  padding: 80px 0;
+}
+
+.debateSection h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 48px;
+  letter-spacing: 1px;
+}
+
+.debateSteps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 0 0 280px;
+  border: 1px solid #333;
+  padding: 32px 24px;
+  background: rgba(10, 14, 39, 0.8);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.stepNumber {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 16px;
+}
+
+.step h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.step p {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.footer {
+  border-top: 1px solid #ff4444;
+  padding: 24px 0;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.footerLinks a {
+  color: #ff4444;
+}
+
+@media (max-width: 1024px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .agentGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .debateSteps {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .agentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .centerTitle {
+    font-size: 32px;
+  }
+
+  .debateSteps {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+}
